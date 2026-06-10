@@ -104,7 +104,7 @@ adapter/
 Example:
 
 You: Who is Thanbir Tamim?
-Bot: Thanbir Tamim is a senior software engineer at Softzino Technologies.
+Bot: Thanbir Tamim is a senior software engineer at Google.
 
 ---
 
