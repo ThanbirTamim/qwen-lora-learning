@@ -128,6 +128,45 @@ Save Adapter
 Inference = Base Model + LoRA Adapter
 ```
 
+# ⚙️ Working Process
+
+This project follows a complete LoRA fine-tuning workflow, starting from a custom dataset and ending with an interactive chatbot powered by a trained LoRA adapter.
+
+## High-Level Architecture
+
+```text
+Custom Dataset (JSON)
+          │
+          ▼
+ Dataset Formatting
+ (Qwen Chat Format)
+          │
+          ▼
+     Tokenization
+          │
+          ▼
+  Base Qwen2.5-3B Model
+   (Frozen Weights)
+          │
+          ▼
+    LoRA Injection
+ (Attention Layers)
+          │
+          ▼
+       Training
+ (Only LoRA Weights)
+          │
+          ▼
+   Adapter Checkpoint
+          │
+          ▼
+  Base Model + Adapter
+          │
+          ▼
+      Inference
+ (Interactive Chat)
+ ```
+
 ---
 
 # 🔥 Why LoRA is Powerful
